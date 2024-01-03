@@ -4,6 +4,9 @@ import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
+
+STOPWORDS = set(stopwords.words('english'))
+
 model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
 
 # transform text to vector
@@ -12,6 +15,8 @@ def text_to_vector(sentence):
 
 # Define a function to clean the text
 def clean_text(text):
+    if not isinstance(text, str):
+        text = str(text)
     # Remove any HTML tags
     text = re.sub('<.*?>', '', text)
     # Remove non-alphabetic characters
@@ -19,7 +24,7 @@ def clean_text(text):
     # Convert to lowercase and tokenize
     words = word_tokenize(text.lower())
     # Remove stopwords
-    words = [word for word in words if word not in stopwords.words('english')]
+    words = [word for word in words if word not in STOPWORDS]
     return ' '.join(words)
 
 # calculate competition similarity 
