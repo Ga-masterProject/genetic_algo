@@ -1,0 +1,6 @@
+sudo apt install python3-pip
+pip install sentence_transformers
+pip install ipywidgets
+pip install deap
+pip install nltk
+pip install pandas
