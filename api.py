@@ -53,7 +53,7 @@ def update_competition_status(competition_id, new_status, best_teams, names_comb
 
 def main_executor():
     db_init()  # Initialize the database and tables
-    max_threads = 150   # Number of competitions to run concurrently
+    max_threads = 10   # Number of competitions to run concurrently
 
     all_competitions = fetch_competitions()
     total_competitions = len(all_competitions)

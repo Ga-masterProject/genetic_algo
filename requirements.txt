@@ -4,3 +4,16 @@ pip install ipywidgets
 pip install deap
 pip install nltk
 pip install pandas
+
+# sudo apt install python3-pip
+# !pip install sentence_transformers
+# !pip install ipywidgets
+# !pip install deap
+# !pip install nltk
+# pip install pandas
+# sudo apt-get update
+
+# python3.11 -m pip install ipywidgets deap nltk sentence_transformers pandas
+# import nltk
+# nltk.download('punkt')
+# nltk.download('stopwords')
