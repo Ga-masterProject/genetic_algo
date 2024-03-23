@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
-from functions import calculate_tags_similarity, text_to_vector, clean_text, calculate_competition_similarity
-from genticAlgo import GA
+from implementation.functions import calculate_tags_similarity, text_to_vector, clean_text, calculate_competition_similarity
+from implementation.genticAlgo import GA
 from sklearn.metrics.pairwise import cosine_similarity
 
 def main(new_competition):

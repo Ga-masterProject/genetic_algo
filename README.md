@@ -5,15 +5,17 @@
 first you need to setup kaggle api
 To set up the Kaggle API, follow these steps:
 
-Go to the Kaggle website and sign in to your account.
-Click on your profile icon in the top right corner of the screen.
-Select "Account" from the dropdown menu.
-Click on the "API" tab.
-Click on the "Create New API Token" button.
-Enter a name for your API token and click on the "Create" button.
-Your API token will be displayed on the screen. Copy and save it in a safe place.
-To use the Kaggle API, you will need to install the Kaggle API client. You can do this by running the following command in your terminal:
+- Go to the Kaggle website and sign in to your account.
+- Click on your profile icon in the top right corner of the screen.
+- Select "Account" from the dropdown menu.
+- Click on the "API" tab.
+- Click on the "Create New API Token" button.
+- Enter a name for your API token and click on the "Create" button.
+- Your API token will be displayed on the screen. Copy and save it in a safe place.
+- To use the Kaggle API, you will need to install the Kaggle API client. You can do this by running the following command in your terminal:
 
 pip install kaggle
 
-after that install the requirements file
+after that install the requirements file.
+
+start by => python3 api.py

@@ -1,6 +1,6 @@
 import concurrent.futures
 import sqlite3
-from main import main
+from implementation.main import main
 import nltk
 
 # Database setup
